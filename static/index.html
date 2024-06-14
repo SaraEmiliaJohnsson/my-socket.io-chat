@@ -6,11 +6,26 @@
     <title>My Socket.io chat</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h2>My socket.io chat</h2>
-        <main>
-            
-        </main>
     </header>
+        <main class="wrapper">
+            <section id="login">
+                <label for="message">Skriv in ditt namn:</label>
+                <input type="text" name="" id="message" placeholder="Användarnamn.." class="login_input">
+                <button type="submit">Logga in</button>
+            </section>
+            <section id="chat" class="hidden">
+                <section class="submin-message">
+                    <label for="chat-message">Meddelande:</label>
+                    <input type="text" name="" id="chat-message" class="submit-message_input" placeholder="Skriv ditt meddelande här...">
+                    <p id="typing-message"></p>
+                    <button id="send" class="submit-message_button" type="button">Skicka</button>
+                    <button type="button" id="log-out_button">Logga ut</button>
+                </section>
+            </section>
+        </main>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="index.js"></script>
 </body>
 </html>
