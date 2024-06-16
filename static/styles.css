@@ -3,3 +3,110 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.header {
+    background-color: #BC8DA7;
+    width: 100vw;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 90vh;
+}
+#login {
+	background-color: #BDB4BF;
+	height: 400px;
+	width: 400px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    border: 2px solid #E36397;
+}
+
+#login.hidden {
+	display: none;
+}
+
+
+#chat {
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#chat.hidden {
+	display: none;
+}
+
+#chat-area {
+	background-color: #EFF2EF;
+	height: 300px;
+	width: 450px;
+	border: 2px solid #E36397;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px;
+}
+
+
+.submit-message {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#chat-message {
+	width: 250px;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 7px;
+}
+
+#message {
+	width: 250px;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+#send {
+	padding: 5px 35px;
+	background-color: #E36397;
+	color: white;
+	border-radius: 5px;
+}
+
+#log-out_button {
+	padding: 5px 35px;
+	background-color: #E36397;
+	color: white;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+#login_button {
+	padding: 5px 35px;
+	background-color: #E36397;
+	color: white;
+	border-radius: 5px;
+	margin: 5px;
+}

@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="header">
+        <h2>My socket.io chat</h2>
+    </header>
+    <main class="wrapper">
     <div id="login">
-        <input type="text" id="message" placeholder="Enter your username">
-        <button type="button" id="login_button">Login</button>
+        <label for="message">Skriv in ditt användarnamn:</label>
+        <input type="text" id="message" placeholder="Användarnamn..">
+        <button type="button" id="login_button">Logga in</button>
     </div>
     <div id="chat" class="hidden">
         <div id="chat-area"></div>
-        <input type="text" id="chat-message" placeholder="Type your message">
-        <button type="button" id="send">Send</button>
+        <label for="chat-message">Skriv ditt meddelande här:</label>
+        <input type="text" id="chat-message" placeholder="Skriv här..">
+        <button type="button" id="send">Skicka</button>
         <p id="typing-message"></p>
-        <button type="button" id="log-out_button">Log Out</button>
+        <button type="button" id="log-out_button">Logga ut</button>
     </div>
+</main>
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
 </body>
