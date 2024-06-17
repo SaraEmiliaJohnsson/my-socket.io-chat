@@ -16,7 +16,10 @@ body {
 .header {
     background-color: #BC8DA7;
     width: 100vw;
-    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper {
@@ -25,11 +28,11 @@ body {
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 90vh;
+    height: 85vh;
 }
 #login {
-	background-color: #BDB4BF;
-	height: 400px;
+	background-color: #EFF2EF;
+	height: 280px;
 	width: 400px;
 	border-radius: 5px;
 	display: flex;
@@ -109,4 +112,11 @@ body {
 	color: white;
 	border-radius: 5px;
 	margin: 5px;
+}
+
+.footer {
+    background-color: #BC8DA7;
+    width: 100vw;
+    height: 40px;
+    margin-bottom: 0;
 }
